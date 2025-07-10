@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "JosefinSans-Medium";
+  src: url("../font/JosefinSans-Medium.woff2"), format("woff2");
+}
+* {
+  font-family: "JosefinSans-Medium";
+}
+body {
+  background-color: #181824;
+}
+.img-header {
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+.content-site {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.title-header {
+  letter-spacing: 22px;
+  color: #fdfcfa;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.input-todo {
+  outline: none;
+}
+.input-todo,
+.item-todo {
+  background-color: #25273c;
+  padding: 10px;
+  font-size: 20px;
+  color: #bfc1da;
+}
+.content-site {
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .content-site {
+    width: 85%;
+  }
+}
