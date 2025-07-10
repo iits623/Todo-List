@@ -39,6 +39,10 @@ body {
 .content-site {
   width: 60%;
 }
+.checked {
+  color: #4a4c61;
+  text-decoration: line-through;
+}
 @media (max-width: 768px) {
   .content-site {
     width: 85%;
