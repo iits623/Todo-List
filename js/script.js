@@ -2,16 +2,15 @@ let inputTodo = document.querySelector('.input-todo')
 let listTodos = document.querySelector('.list-todos')
 
 function enterTodo(e) {
-    if (e.code === 'Enter') {
+    if (e.key === 'Enter') {
         e.preventDefault()
-        let inputValue = inputTodo.value
+        let inputValue = inputTodo.value.trim()
         if (inputValue === '') {
             alert('Pleas Enter Text')
         } else {
             let elemLi = '<li class="item-todo d-flex border-bottom border-secondary justify-content-between align-items-center"><div class="d-flex gap-4" ><input class="form-check" type="checkbox"><span class="text-todo">' + inputValue + '</span></div><img class="delete-todo" src="img/trash-delete-white-icon.png" width="20px" height="20px" alt=""></li>'
             listTodos.insertAdjacentHTML('beforeend', elemLi)
             inputTodo.value = ''
-
             let checkTodo = document.querySelectorAll('.form-check')
             let delTodo = document.querySelectorAll('.delete-todo')
 
